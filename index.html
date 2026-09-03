@@ -1,0 +1,573 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>A&Y CONSOLIDATED | Premium Residential Apartments in Dehiwala</title>
+        
+        <!-- SEO Meta Tags -->
+        <meta name="description" content="A&Y Consolidated presents premium residential apartments in Dehiwala. Watch our construction journey from foundation to completion - Driven by Quality, Defined by Integrity.">
+        
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+        
+        <!-- Stylesheet -->
+        <link rel="stylesheet" href="styles.css">
+        
+        <!-- FontAwesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        
+        <!-- GSAP & ScrollTrigger -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+        
+        <!-- Custom Script -->
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+
+        <!-- Progress Bar -->
+        <div id="progress-bar"></div>
+
+        <!-- Top Navbar -->
+        <nav class="navbar">
+        <div class="logo">A&Y CONSOLIDATED</div>
+        <div class="nav-links">
+            <a href="#gallery">Project Gallery</a>
+            <a href="#testimonials">Client Reviews</a>
+            <a href="#specifications">Specifications</a>
+            <a href="#amenities">Amenities</a>
+            <a href="#investment">Investment Details</a>
+            <a href="#contact">Book Site Visit</a>
+        </div>
+    </nav>
+
+        <!-- Scroll Indicator -->
+        <div class="scroll-indicator" id="scroll-indicator">
+            <div class="mouse"></div>
+            <div class="arrow"></div>
+        </div>
+
+        <!-- Main Pin Container -->
+        <div id="main-container">
+            
+            <!-- Canvas for Frames -->
+            <canvas id="frame-canvas"></canvas>
+            
+            <!-- Gradient Overlay for Text Readability -->
+            <div class="gradient-overlay"></div>
+
+            <!-- Stage 1 Text: Empty Plot -->
+            <div class="text-stage" id="stage-1">
+                <h3 class="small-caps">A&Y CONSOLIDATED</h3>
+                <h1 class="hero-text">Dehiwala's Premier<br>Residential Haven</h1>
+                <p class="body-text">Strategic location, premium luxury, and superior design. 10 spacious 3BR apartments in the heart of Dehiwala - where affordability meets lifestyle excellence.</p>
+                <button class="cta-button outline">Explore The Project</button>
+            </div>
+
+            <!-- Stage 2 Text: Structural Framework -->
+            <div class="text-stage" id="stage-2">
+                <h3 class="small-caps">A&Y CONSOLIDATED</h3>
+                <h1 class="hero-text">Engineering Excellence<br>Foundation Strong</h1>
+                <p class="body-text">14 perches of prime Dehiwala land developed with precision. G+5 structure with state-of-the-art foundation work - built to last generations.</p>
+                <button class="cta-button outline">Project Specifications</button>
+            </div>
+
+            <!-- Stage 3 Text: Walls, Windows & Finishing -->
+            <div class="text-stage" id="stage-3">
+                <h3 class="small-caps">A&Y CONSOLIDATED</h3>
+                <h1 class="hero-text">Contemporary Design<br>Executed Perfectly</h1>
+                <p class="body-text">Each apartment 1,250-1,450 sq.ft with premium finishes, balconies, and modern amenities. Sea views, ventilation, privacy - everything buyers value.</p>
+                <button class="cta-button outline">View Floor Plans</button>
+            </div>
+
+            <!-- Stage 4 Text: Completed House -->
+            <div class="text-stage" id="stage-4">
+                <h3 class="small-caps">A&Y CONSOLIDATED</h3>
+                <h1 class="hero-text">Move Into Your<br>Premium Sanctuary</h1>
+                <p class="body-text">Ready to welcome you home. 10 exclusive apartments with gym, rooftop, CCTV, generator backup, and basement parking - complete lifestyle solution.</p>
+                <button class="cta-button outline">Reserve Your Unit</button>
+            </div>
+
+
+
+        </div>
+
+        <!-- ============================== -->
+        <!-- SECTION 1: FEATURED PROJECTS   -->
+        <!-- ============================== -->
+        <section id="projects" class="section featured-projects reveal-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="hero-text">Dehiwala Premium Residential</h2>
+                    <p class="body-text">G+5 Residential Development - 10 Luxury Apartments in Strategic Dehiwala Location</p>
+                </div>
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <div class="project-card">
+                        <img src="images/project_1_1779380254029.png" alt="Dehiwala Premium Apartments" class="project-img">
+                        <div class="project-overlay"></div>
+                        <div class="project-content">
+                            <div class="project-location">DEHIWALA, COLOMBO</div>
+                            <h3 class="project-title">Premium Residential Complex</h3>
+                            <p class="project-details">Land: 14 Perches &middot; Built: 13,487 sq ft &middot; LKR 37,500-42,500/sqft &middot; Completion 36 Months</p>
+                            <button class="cta-button outline hover-slide">Learn More</button>
+                        </div>
+                    </div>
+                    <!-- Project 2 -->
+                    <div class="project-card">
+                        <img src="images/project_2_1779380272507.png" alt="Luxury Amenities" class="project-img">
+                        <div class="project-overlay"></div>
+                        <div class="project-content">
+                            <div class="project-location">10 EXCLUSIVE UNITS</div>
+                            <h3 class="project-title">Luxury Amenities Package</h3>
+                            <p class="project-details">Gym &middot; Rooftop Leisure &middot; CCTV Security &middot; Backup Generator &middot; Basement Parking</p>
+                            <button class="cta-button outline hover-slide">View Amenities</button>
+                        </div>
+                    </div>
+                    <!-- Project 3 -->
+                    <div class="project-card">
+                        <img src="images/project_3_1779380290833.png" alt="Investment Returns" class="project-img">
+                        <div class="project-overlay"></div>
+                        <div class="project-content">
+                            <div class="project-location">INVESTMENT OPPORTUNITY</div>
+                            <h3 class="project-title">Strong Financial Returns</h3>
+                            <p class="project-details">Sales Revenue: LKR 472M &middot; ROI: 31.66% &middot; Rental Yield: 6-7% &middot; IRR: 20-25%</p>
+                            <button class="cta-button outline hover-slide">View Details</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center" style="margin-top: 40px;">
+                    <a href="#" class="gold-link">View All Projects &rarr;</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================== -->
+        <!-- SECTION 2: WHY CHOOSE US       -->
+        <!-- ============================== -->
+        <section id="why-us" class="section why-us reveal-section with-bg-image">
+            <div class="container two-col">
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <div class="stat-number"><span class="counter" data-target="10">0</span><span class="stat-plus"></span></div>
+                        <div class="stat-label">Premium Apartments</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number"><span class="counter" data-target="14">0</span><span class="stat-plus"></span></div>
+                        <div class="stat-label">Prime Perches</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number"><span class="counter" data-target="31">0</span><span class="stat-plus">%</span></div>
+                        <div class="stat-label">ROI (Before Finance)</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number"><span class="counter" data-target="20">0</span><span class="stat-plus">%</span></div>
+                        <div class="stat-label">Profit Margin</div>
+                    </div>
+                </div>
+                <div class="usp-list">
+                    <h2 class="hero-text">Why Dehiwala is Ideal</h2>
+                    <ul>
+                        <li><i class="fa-solid fa-check gold-icon"></i> <strong>Fixed Price Contracts</strong> — No hidden costs, ever.</li>
+                        <li><i class="fa-solid fa-check gold-icon"></i> <strong>30-Month Structural Warranty</strong> on every build.</li>
+                        <li><i class="fa-solid fa-check gold-icon"></i> <strong>Dedicated Site Manager</strong> assigned to your project.</li>
+                        <li><i class="fa-solid fa-check gold-icon"></i> <strong>Turnkey Delivery</strong> — design, build, finish, handover.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================== -->
+        <!-- SECTION 3: HOW WE BUILD        -->
+        <!-- ============================== -->
+        <section id="process" class="section process reveal-section with-bg-image">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2 class="hero-text">From Plot to Possession</h2>
+                    <p class="body-text text-center">A transparent, step-by-step process designed around you.</p>
+                </div>
+                <div class="timeline">
+                    <div class="timeline-line"></div>
+                    <div class="timeline-step">
+                        <div class="step-circle">1</div>
+                        <h4>Site Visit & Assessment</h4>
+                        <p>We visit your plot, study orientation, soil, and surroundings.</p>
+                    </div>
+                    <div class="timeline-step">
+                        <div class="step-circle">2</div>
+                        <h4>Design & Planning</h4>
+                        <p>Architectural drawings, structural design, and 3D visualization delivered.</p>
+                    </div>
+                    <div class="timeline-step">
+                        <div class="step-circle">3</div>
+                        <h4>Contract & Approval</h4>
+                        <p>Transparent fixed-price contract. Municipal approvals handled by us.</p>
+                    </div>
+                    <div class="timeline-step">
+                        <div class="step-circle">4</div>
+                        <h4>Foundation & Structure</h4>
+                        <p>RCC framework built to IS code with premium TMT steel and M25 concrete.</p>
+                    </div>
+                    <div class="timeline-step">
+                        <div class="step-circle">5</div>
+                        <h4>Finishing & Interiors</h4>
+                        <p>Plaster, flooring, electrical, plumbing, tiling, paint — all coordinated.</p>
+                    </div>
+                    <div class="timeline-step">
+                        <div class="step-circle">6</div>
+                        <h4>Handover & Warranty</h4>
+                        <p>Final walkthrough, snagging list cleared, keys handed over with warranty documents.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================== -->
+        <!-- SECTION 4: PRICING PACKAGES    -->
+        <!-- ============================== -->
+        <section id="pricing" class="section pricing reveal-section with-bg-image">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2 class="hero-text">Transparent Pricing. Zero Surprises.</h2>
+                    <p class="body-text text-center">Choose a construction package that fits your vision and budget.</p>
+                </div>
+                <div class="pricing-grid">
+                    <div class="pricing-card">
+                        <h3>Essential Build</h3>
+                        <div class="price">₹1,650 <span>/ sq ft</span></div>
+                        <p class="best-for">Best for: Budget-conscious quality builds</p>
+                        <hr>
+                        <p><strong>Includes:</strong> RCC structure &middot; Brick walls &middot; Standard flooring &middot; Basic fittings &middot; 1 coat exterior paint</p>
+                        <p class="not-included"><strong>Not included:</strong> Modular kitchen &middot; Premium tiles &middot; False ceiling</p>
+                        <button class="cta-button outline full-width">Get Quote</button>
+                    </div>
+                    <div class="pricing-card highlighted">
+                        <div class="popular-badge"><i class="fa-solid fa-star"></i> MOST POPULAR</div>
+                        <h3>Premium Build</h3>
+                        <div class="price">₹2,200 <span>/ sq ft</span></div>
+                        <p class="best-for">Best for: Modern family homes</p>
+                        <hr>
+                        <p><strong>Includes:</strong> Everything in Essential + Vitrified flooring &middot; Premium sanitary &middot; False ceiling in living &middot; Modular kitchen &middot; 2-coat texture exterior</p>
+                        <button class="cta-button solid full-width">Get Quote</button>
+                    </div>
+                    <div class="pricing-card">
+                        <h3>Luxury Build</h3>
+                        <div class="price">₹3,100 <span>/ sq ft</span></div>
+                        <p class="best-for">Best for: High-end villas and bungalows</p>
+                        <hr>
+                        <p><strong>Includes:</strong> Everything in Premium + Italian marble &middot; Home automation &middot; Designer lighting &middot; Landscaping &middot; Architect-designed interiors</p>
+                        <button class="cta-button outline full-width">Get Quote</button>
+                    </div>
+                </div>
+                <p class="pricing-note text-center">* All prices per sq ft of built-up area. GST applicable. Site visit required for final quote.</p>
+            </div>
+        </section>
+
+        <!-- ============================== -->
+        <!-- SECTION 5: PHOTO GALLERY       -->
+        <!-- ============================== -->
+        <section id="gallery" class="section gallery reveal-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="hero-text">Work That Speaks</h2>
+                    <p class="body-text">A glimpse into the homes we have crafted across Delhi NCR.</p>
+                </div>
+                <div class="masonry-grid">
+                    <!-- 9 Images -->
+                    <div class="masonry-item" onclick="openLightbox(this)"><img src="images/gallery_1_1779379484199.png" alt="Modern Luxury Villa at Twilight"><div class="overlay"><i class="fa-solid fa-plus gold-icon"></i><p>Modern Villa &middot; Gurugram 2024</p></div></div>
+                    <div class="masonry-item" onclick="openLightbox(this)"><img src="images/gallery_2_1779379510372.png" alt="High-end Residential Construction Site"><div class="overlay"><i class="fa-solid fa-plus gold-icon"></i><p>Contemporary Home &middot; Noida 2023</p></div></div>
+                    <div class="masonry-item" onclick="openLightbox(this)"><img src="images/gallery_3_1779379534787.png" alt="Contemporary Smart Home Exterior"><div class="overlay"><i class="fa-solid fa-plus gold-icon"></i><p>Luxury Bungalow &middot; Delhi 2022</p></div></div>
+                    <div class="masonry-item" onclick="openLightbox(this)"><img src="images/gallery_4_1779379550084.png" alt="Construction Workers Pouring Concrete"><div class="overlay"><i class="fa-solid fa-plus gold-icon"></i><p>Minimalist Design &middot; Gurugram 2024</p></div></div>
+                    <div class="masonry-item" onclick="openLightbox(this)"><img src="images/gallery_5_1779379567777.png" alt="Classic Architecture Luxury Bungalow"><div class="overlay"><i class="fa-solid fa-plus gold-icon"></i><p>Classic Architecture &middot; Delhi 2023</p></div></div>
+                    <div class="masonry-item" onclick="openLightbox(this)"><img src="images/gallery_6_1779379588256.png" alt="Modern House Interior During Construction"><div class="overlay"><i class="fa-solid fa-plus gold-icon"></i><p>Smart Home &middot; Noida 2024</p></div></div>
+                    <div class="masonry-item" onclick="openLightbox(this)"><img src="images/gallery_7_1779379605692.png" alt="Premium Finished Living Room"><div class="overlay"><i class="fa-solid fa-plus gold-icon"></i><p>Premium Finish &middot; Gurugram 2022</p></div></div>
+                    <div class="masonry-item" onclick="openLightbox(this)"><img src="images/gallery_8_1779379624217.png" alt="Large Luxury Estate Exterior"><div class="overlay"><i class="fa-solid fa-plus gold-icon"></i><p>Spacious Interiors &middot; Delhi 2024</p></div></div>
+                    <div class="masonry-item" onclick="openLightbox(this)"><img src="images/gallery_9_1779379642249.png" alt="Residential Building Construction Site"><div class="overlay"><i class="fa-solid fa-plus gold-icon"></i><p>Luxury Estate &middot; Noida 2023</p></div></div>
+                </div>
+                <div class="text-center" style="margin-top: 40px;">
+                    <button class="cta-button outline">Load More</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Lightbox -->
+        <div id="lightbox" class="lightbox">
+            <span class="close-lightbox" onclick="closeLightbox()">&times;</span>
+            <div class="lightbox-nav prev" onclick="changeLightbox(-1)"><i class="fa-solid fa-chevron-left"></i></div>
+            <img class="lightbox-content" id="lightbox-img">
+            <div class="lightbox-nav next" onclick="changeLightbox(1)"><i class="fa-solid fa-chevron-right"></i></div>
+            <div id="lightbox-caption"></div>
+        </div>
+
+        <!-- ============================== -->
+        <!-- SECTION 6: CLIENT TESTIMONIALS -->
+        <!-- ============================== -->
+        <section id="testimonials" class="section testimonials reveal-section with-bg-image">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2 class="hero-text">Words From Our Homeowners</h2>
+                </div>
+            </div>
+            <div class="carousel-container">
+                <div class="carousel-track">
+                    <!-- Cards -->
+                    <div class="testimonial-card">
+                        <i class="fa-solid fa-quote-left gold-quote"></i>
+                        <p class="quote-text">"Build Constructions delivered our dream home exactly on time and within budget. The quality of the RCC structure and finishing is exceptional. Couldn't have asked for a better team."</p>
+                        <h4 class="client-name">Rajesh & Priya Malhotra</h4>
+                        <p class="client-loc">Casa Meridian, Gurugram</p>
+                        <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                    </div>
+                    <div class="testimonial-card">
+                        <i class="fa-solid fa-quote-left gold-quote"></i>
+                        <p class="quote-text">"From the first site visit to the final handover, every step was transparent and professional. Our 4BHK turned out better than we imagined."</p>
+                        <h4 class="client-name">Amit Sharma</h4>
+                        <p class="client-loc">Noida Sector 50</p>
+                        <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                    </div>
+                    <div class="testimonial-card">
+                        <i class="fa-solid fa-quote-left gold-quote"></i>
+                        <p class="quote-text">"The dedicated site manager kept us updated daily. We were in Dubai during construction and had zero stress. Truly turnkey."</p>
+                        <h4 class="client-name">Sanjay Verma</h4>
+                        <p class="client-loc">The Ivory Residence, Delhi</p>
+                        <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                    </div>
+                    <div class="testimonial-card">
+                        <i class="fa-solid fa-quote-left gold-quote"></i>
+                        <p class="quote-text">"Excellent material quality, no hidden costs, and a beautiful finish. Build Constructions has set a new benchmark in Delhi NCR construction."</p>
+                        <h4 class="client-name">Neha & Rohit Kapoor</h4>
+                        <p class="client-loc">DLF Phase 2, Delhi</p>
+                        <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                    </div>
+                    <div class="testimonial-card">
+                        <i class="fa-solid fa-quote-left gold-quote"></i>
+                        <p class="quote-text">"We compared 6 contractors before choosing Build Constructions. Best decision we made. The 30-month warranty gave us complete peace of mind."</p>
+                        <h4 class="client-name">Vikram Nair</h4>
+                        <p class="client-loc">Sector 43, Gurugram</p>
+                        <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                    </div>
+                    <!-- Duplicate for seamless loop -->
+                    <div class="testimonial-card">
+                        <i class="fa-solid fa-quote-left gold-quote"></i>
+                        <p class="quote-text">"Build Constructions delivered our dream home exactly on time and within budget. The quality of the RCC structure and finishing is exceptional. Couldn't have asked for a better team."</p>
+                        <h4 class="client-name">Rajesh & Priya Malhotra</h4>
+                        <p class="client-loc">Casa Meridian, Gurugram</p>
+                        <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                    </div>
+                    <div class="testimonial-card">
+                        <i class="fa-solid fa-quote-left gold-quote"></i>
+                        <p class="quote-text">"From the first site visit to the final handover, every step was transparent and professional. Our 4BHK turned out better than we imagined."</p>
+                        <h4 class="client-name">Amit Sharma</h4>
+                        <p class="client-loc">Noida Sector 50</p>
+                        <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================== -->
+        <!-- SECTION 7: EMPANELLED BRANDS   -->
+        <!-- ============================== -->
+        <section class="section brands reveal-section">
+            <h3 class="small-caps text-center" style="margin-bottom: 40px;">We Build With The Best</h3>
+            <div class="marquee-container">
+                <div class="marquee-content">
+                    <span>UltraTech Cement</span>
+                    <span>Tata Steel</span>
+                    <span>Havells</span>
+                    <span>Kohler</span>
+                    <span>Asian Paints</span>
+                    <span>Kajaria</span>
+                    <span>Legrand</span>
+                    <span>Jaquar</span>
+                    <span>Saint-Gobain</span>
+                    <span>Somany</span>
+                    <!-- Duplicate for seamless loop -->
+                    <span>UltraTech Cement</span>
+                    <span>Tata Steel</span>
+                    <span>Havells</span>
+                    <span>Kohler</span>
+                    <span>Asian Paints</span>
+                    <span>Kajaria</span>
+                    <span>Legrand</span>
+                    <span>Jaquar</span>
+                    <span>Saint-Gobain</span>
+                    <span>Somany</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================== -->
+        <!-- SECTION 8: CONTACT FORM        -->
+        <!-- ============================== -->
+        <section id="contact" class="section contact reveal-section">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2 class="hero-text">Let's Build Together</h2>
+                    <p class="body-text text-center">Tell us about your project and we will get back within 24 hours.</p>
+                </div>
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <div class="info-item">
+                            <i class="fa-solid fa-location-dot gold-icon"></i>
+                            <div>
+                                <h4>Project Location</h4>
+                                <p>Dehiwala, Colombo, Sri Lanka</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fa-solid fa-phone gold-icon"></i>
+                            <div>
+                                <h4>Contact</h4>
+                                <p>+94 (0) 11 222 3344</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fa-solid fa-envelope gold-icon"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p>info@ayconsoli dated.lk</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fa-solid fa-clock gold-icon"></i>
+                            <div>
+                                <h4>Office Hours</h4>
+                                <p>Mon–Fri, 9:00 AM – 5:00 PM (SL Time)</p>
+                            </div>
+                        </div>
+                        <div class="map-placeholder">
+                            <img src="https://picsum.photos/600/300?random=99" alt="Map Placeholder" style="width: 100%; height: 100%; object-fit: cover; opacity: 0.5;">
+                            <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);"><i class="fa-solid fa-map-location-dot fa-2x"></i></div>
+                        </div>
+                    </div>
+                    <div class="contact-form">
+                        <form id="booking-form">
+                            <div class="form-group">
+                                <input type="text" id="name" placeholder="Full Name" required>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <input type="tel" id="phone" placeholder="Phone Number" required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" id="email" placeholder="Email Address" required>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <input type="text" id="city" placeholder="City / Plot Location" required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="number" id="plot-size" placeholder="Plot Size (sq yards)" required>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <select id="type" required>
+                                        <option value="" disabled selected>Construction Type</option>
+                                        <option value="new">New House Construction</option>
+                                        <option value="renovation">Renovation</option>
+                                        <option value="commercial">Commercial</option>
+                                        <option value="plot">Plot Development</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <select id="package" required>
+                                        <option value="" disabled selected>Preferred Package</option>
+                                        <option value="essential">Essential</option>
+                                        <option value="premium">Premium</option>
+                                        <option value="luxury">Luxury</option>
+                                        <option value="unsure">Not Sure Yet</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <input type="date" id="date" placeholder="Expected Start Date">
+                            </div>
+                            <div class="form-group">
+                                <textarea id="message" rows="4" placeholder="Message / Additional Requirements"></textarea>
+                            </div>
+                            <button type="submit" class="cta-button solid full-width">Book Free Site Visit</button>
+                            <p id="form-success" style="display: none; color: #c9a84c; margin-top: 15px; text-align: center;">Thank you! Our team will contact you within 24 hours to schedule your free site visit.</p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================== -->
+        <!-- SECTION 9: FOOTER              -->
+        <!-- ============================== -->
+        <footer class="footer with-bg-image">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-col brand-col">
+                        <h2 class="hero-text" style="font-size: 24px; margin-bottom: 10px;">A&Y CONSOLIDATED</h2>
+                        <p class="tagline">Driven by Quality, Defined by Integrity.</p>
+                        <p class="about-line">Premium Residential Development in Dehiwala, Sri Lanka. Building Quality Homes Since 2012.</p>
+                        <div class="social-links">
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#projects">Projects</a></li>
+                            <li><a href="#process">Our Process</a></li>
+                            <li><a href="#pricing">Pricing</a></li>
+                            <li><a href="#gallery">Gallery</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Services</h4>
+                        <ul>
+                            <li><a href="#">New Home Construction</a></li>
+                            <li><a href="#">Villa & Bungalow</a></li>
+                            <li><a href="#">Renovation & Remodelling</a></li>
+                            <li><a href="#">Commercial Construction</a></li>
+                            <li><a href="#">Interior Design</a></li>
+                            <li><a href="#">Plot Development</a></li>
+                            <li><a href="#">Vastu-Compliant Design</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Contact</h4>
+                        <ul>
+                            <li>412, Suncity Business Tower, Sector 54, Gurugram</li>
+                            <li>+91 98100 45231</li>
+                            <li>hello@buildconstructions.in</li>
+                        </ul>
+                        <a href="https://wa.me/919810045231" class="whatsapp-btn"><i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp</a>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    &copy; 2025 A&Y Consolidated (PVT, LTD). All rights reserved. &middot; <a href="#">Privacy Policy</a> &middot; <a href="#">Terms of Use</a>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Sticky Floating Button -->
+        <a href="https://wa.me/94112223344" class="floating-wa"><i class="fa-brands fa-whatsapp"></i></a>
+
+        <!-- Mobile Sticky Bar -->
+        <div class="mobile-sticky-bar">
+            <a href="tel:+94112223344" class="call-btn"><i class="fa-solid fa-phone"></i> Call Now</a>
+            <a href="https://wa.me/94112223344" class="wa-btn"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+        </div>
+
+        <!-- Custom Cursor -->
+        <div class="custom-cursor" id="custom-cursor"></div>
+
+    </body>
+    </html>
